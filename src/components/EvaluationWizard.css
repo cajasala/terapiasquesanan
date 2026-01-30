@@ -1,0 +1,209 @@
+.wizard-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, var(--color-background) 0%, #E8E8E0 100%);
+}
+
+.wizard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.wizard-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(74, 103, 65, 0.1);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.step-indicator {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.wizard-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.wizard-header h3 {
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    margin-top: 1.5rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--color-primary);
+    transition: width 0.5s ease;
+}
+
+.wizard-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wizard-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.option-card {
+    background: transparent;
+    border: 2px solid #E0E0E0;
+    padding: 1.25rem;
+    border-radius: 12px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    color: var(--color-text);
+}
+
+.option-card:hover {
+    border-color: var(--color-primary);
+    background-color: rgba(74, 103, 65, 0.05);
+    color: var(--color-primary);
+}
+
+.multi-questions {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-choice {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-choice.selected {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.btn-next {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-next:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-back {
+    margin-top: 2rem;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: var(--color-text-light);
+    cursor: pointer;
+}
+
+.result-container {
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+.result-icon {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+}
+
+.result-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    color: var(--color-text-light);
+}
+
+.empathy-msg {
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.whatsapp-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #25D366;
+    /* WhatsApp Green */
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .wizard-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .wizard-header h3 {
+        font-size: 1.5rem;
+    }
+}

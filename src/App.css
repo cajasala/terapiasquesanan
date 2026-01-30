@@ -1,0 +1,10 @@
+/* App specific styles if needed, otherwise rely on modules and global css */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
