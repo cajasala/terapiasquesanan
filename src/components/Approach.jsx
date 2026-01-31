@@ -4,6 +4,7 @@ import './Approach.css';
 const Approach = () => {
     return (
         <section id="enfoque" className="approach">
+            <div><h3>.</h3></div>
             <div className="container approach-container">
                 <h2>Nuestro Enfoque</h2>
                 <div className="approach-text-wrapper">

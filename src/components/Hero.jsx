@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import miImagen from '../assets/MenteCuerpoV2.jpeg';
 
 const Hero = () => {
     const scrollToEvaluation = () => {
@@ -11,9 +12,10 @@ const Hero = () => {
 
     return (
         <section id="inicio" className="hero">
+            <div><h3>.</h3></div>
             <div className="container hero-container">
                 <div className="hero-content">
-                    <h1>Sanamos el cuerpo, <span className="highlight">equilibramos la mente</span></h1>
+                    <h1>Equilibra tu mente y cuerpo.</h1>
                     <p className="hero-subtitle">
                         Terapias naturales personalizadas para tu bienestar físico y emocional.
                     </p>
@@ -27,7 +29,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="hero-image-placeholder">
-                    <img src="/src/assets/hero-bg.png" alt="Relaxing nature" className="hero-image" />
+                    <img src={miImagen} alt="Relaxing nature" className="hero-image" />
                 </div>
             </div>
         </section>

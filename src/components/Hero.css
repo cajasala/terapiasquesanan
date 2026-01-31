@@ -1,5 +1,5 @@
 .hero {
-    padding: 4rem 0;
+    padding: 1rem 0;
     background: linear-gradient(135deg, #F5F5F0 0%, #FFFFFF 100%);
     overflow: hidden;
     position: relative;
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 .hero-content {
@@ -96,7 +96,7 @@
         flex-direction: column;
         text-align: center;
         gap: 2rem;
-        padding-top: 2rem;
+        padding-top: 0rem;
     }
 
     .hero h1 {
