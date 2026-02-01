@@ -11,7 +11,7 @@ const CTA = () => {
             <div className="container cta-container">
                 <h2>Agenda tu cita y comienza tu proceso de sanación</h2>
                 <div className="cta-buttons">
-                    <button className="btn btn-primary whatsapp-btn">Reservar por WhatsApp</button>
+                    <a href="https://wa.me/573103041012" target="_blank" rel="noopener noreferrer" className="btn btn-primary whatsapp-btn">Reservar por WhatsApp</a>
                     <button className="btn btn-outline-light" onClick={scrollToEvaluation}>Agendar evaluación</button>
                 </div>
             </div>

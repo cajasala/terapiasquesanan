@@ -11,8 +11,8 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <h4>Contacto</h4>
-                    <p>Email: contacto@terapiasquesanan.com</p>
-                    <p>Tel: +55 123 456 789</p>
+                    <p>Email: lufdasanlop@gmail.com</p>
+                    <p>Tel: +57 310 304 1012</p>
                 </div>
                 <div className="footer-section">
                     <h4>Legal</h4>

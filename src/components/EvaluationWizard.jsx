@@ -215,9 +215,9 @@ const EvaluationWizard = () => {
                             </p>
                             <div className="result-cta">
                                 <p className="empathy-msg">¡Es el primer paso para sentirte mejor!</p>
-                                <button className="btn btn-primary whatsapp-btn">
+                                <a href="https://wa.me/573103041012" target="_blank" rel="noopener noreferrer" className="btn btn-primary whatsapp-btn">
                                     Reservar por WhatsApp
-                                </button>
+                                </a>
                                 <button className="btn btn-outline" onClick={resetWizard}>
                                     Volver a evaluar
                                 </button>
